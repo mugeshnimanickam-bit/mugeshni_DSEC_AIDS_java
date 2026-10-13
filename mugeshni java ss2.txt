@@ -1,0 +1,119 @@
+1.class Main {
+    public static void main(String[] args) {
+        int mark = 75;
+        if (mark < 50){
+        System.out.println("mark < =50 fail");
+        }  else {
+        System.out.println("mark > = 50 pass");
+        }
+    }
+}
+ 
+2.class Main {
+    public static void main(String[] args) {
+        int age = 17;
+        if (age >= 18) {
+            System.out.println("Eligible to vote");
+        } else {
+            System.out.println("Not eligible to vote");
+        }
+    }
+}
+  
+3.class Main {
+    public static void main(String[] args) {
+        int a= 10;
+        int b=20;
+        int large=(a>b) ? a:b;
+        System.out.println("largest number:"+ large);
+    }
+}
+  
+4.class Main {
+    public static void main(String[] args) {
+        boolean id = true;
+        boolean ticket = false;
+        System.out.println(id && ticket);
+    }
+}
+            
+5.class Main {
+    public static void main(String[] args) {
+        boolean id = true;
+        // boolean ticket = false;
+        System.out.println(! id);
+    }
+}
+            
+6.class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        int a = sc.nextInt();
+        int b = sc.nextInt();
+
+        if (a > b) {
+            System.out.println(a);
+        } else if (b > a) {
+            System.out.println(b);
+        } else {
+            System.out.println("Equal");
+        }
+
+        sc.close();
+    }
+}
+
+7.class Main {
+    public static void main(String[] args) {
+    double amount = 2500;
+        double finalAmount=(amount>=2000)?amount*0.90:amount;
+        System.out.println("Final amount="+finalAmount);
+    }
+}
+
+8.class Main {
+    public static void main(String[] args) {
+          int age = 20;
+
+        String result = (age >= 18) ? "Eligible" : "Not Eligible";
+
+        System.out.println(result);
+    }
+}
+
+9.class Main {
+    public static void main(String[] args) {
+        int a = 10;
+        int b = 25;
+        int c = 15;
+
+        int largest = (a >= b)
+                ? ((a >= c) ? a : c)
+                : ((b >= c) ? b : c);
+
+        System.out.println(largest);
+    }
+}
+
+10.class Main {
+    public static void main(String[] args) {
+       int num = 15;
+
+        if (num % 3 == 0 && num % 5 == 0) {
+            System.out.println("Divisible by both");
+        } else {
+            System.out.println("Not divisible by both");
+        }
+    }
+}
+
+11.class Main {
+    public static void main(String[] args) {
+        int num = 7;
+
+        String result = (num % 2 == 0) ? "Even" : "Odd";
+
+        System.out.println(result);
+    }
+}
