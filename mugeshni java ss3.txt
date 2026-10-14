@@ -1,0 +1,157 @@
+1. import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        double balance = sc.nextDouble();
+
+        if (balance < 1000) {
+            System.out.println("Low balance alert");
+        }
+    }
+}
+
+2. import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        int score = sc.nextInt();
+
+        if (score % 2 != 0) {
+            System.out.println("Bonus Unlocked");
+        }
+
+        sc.close();
+    }
+}
+
+3.import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        double temperature = sc.nextDouble();
+
+        if (temperature > 30) {
+            System.out.println("Warm day");
+        } else {
+            System.out.println("Cool day");
+        }
+
+        sc.close();
+    }
+}
+
+4.import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        int num = sc.nextInt();
+
+        if (Math.abs(num) % 10 == 7) {
+            System.out.println("Lucky ending");
+        } else {
+            System.out.println("Not a lucky ending");
+        }
+
+        sc.close();
+    }
+}
+
+5.import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        double amount = sc.nextDouble();
+
+        if (amount >= 500) {
+            System.out.println("Reusable bag");
+        } else {
+            System.out.println("No free bag");
+        }
+
+        sc.close();
+    }
+}
+
+6.import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        int mark = sc.nextInt();
+
+        if (mark < 0 || mark > 100) {
+            System.out.println("Invalid mark");
+        } else if (mark >= 90) {
+            System.out.println("A");
+        } else if (mark >= 75) {
+            System.out.println("B");
+        } else if (mark >= 60) {
+            System.out.println("C");
+        } else if (mark >= 35) {
+            System.out.println("D");
+        } else {
+            System.out.println("Fail");
+        }
+
+        sc.close();
+    }
+}
+
+7.
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        int delivery = sc.nextInt();
+
+        if (delivery < 0) {
+            System.out.println("Invalid order");
+        } else if (delivery >= 2000) {
+            System.out.println("Free delivery");
+        } else if (delivery >= 1000) {
+            System.out.println("$30 delivery charge");
+        } else {
+            System.out.println("$60 delivery charge");
+        }
+
+        sc.close();
+    }
+}
+
+8.
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        int units = sc.nextInt();
+
+        if (units < 0) {
+            System.out.println("Invalid units");
+        } else if (units < 100) {
+            System.out.println("Low consumption");
+        } else if (units <= 199) {
+            System.out.println("Medium consumption");
+        } else if (units <= 299) {
+            System.out.println("High consumption");
+        } else {
+            System.out.println("Very high consumption");
+        }
+
+        sc.close();
+    }
+}
+
