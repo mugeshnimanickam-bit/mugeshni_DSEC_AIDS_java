@@ -1,0 +1,113 @@
+1.import java.util.Scanner;
+class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner (System.in);
+        int n=sc.nextInt();
+        int sum=0;
+        while(n> 0) {
+            int digit = n % 10;
+            sum=sum+digit;
+            n=n/10;
+        }
+        System.out.println("sum of digit="+sum);
+    }
+}
+
+2.import java.util.Scanner;
+class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner (System.in);
+        int a=sc.nextInt();
+        int b=sc.nextInt();
+        int gcd=1;
+        int limit=Math.min(a,b);
+        for(int i =1; i<=limit;i++){
+            if(a%i==0&&b%i==0){
+                gcd=i;
+            }
+        }
+        System.out.println("GCD="+gcd);
+    }
+}
+
+3.import java.util.Scanner;
+class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner (System.in);
+        int n=sc.nextInt();
+        int reverse=0;
+        while(n>0){
+            int digit=n%10;
+            reverse=reverse*10+digit;
+            n=n/10;
+        }
+        System.out.println("Reverse="+reverse);
+    }
+}
+
+4.import java.util.Scanner;
+class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner (System.in);
+        int n=sc.nextInt();
+        int reverse=0;
+        int original=n;
+        while(n>0){
+            int digit=n%10;
+            reverse=reverse*10+digit;
+            n=n/10;
+        }
+        System.out.println("Reverse="+reverse);
+        if(original==reverse){
+            System.out.println("Palindrome");
+        }
+        else{
+            System.out.println("Not a Palindrome");
+        }
+    }
+}
+
+5.import java.util.Scanner;
+class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner (System.in);
+        int n=sc.nextInt();
+        int reverse=0;
+        long fact=1;
+        for(int i = 1;i<=n;i++){
+            fact=fact*i;
+        }
+          System.out.println("Factorial="+fact);
+        }
+    }
+
+6.import java.util.Scanner;
+class Main {
+    public static void main(String[] args) {
+        int count=5;
+        while(count>=1){
+            System.out.println("count down:"+count);
+            count--;
+        }
+          System.out.println("Start");
+        }
+    }
+7.public class Main {
+    public static void main(String[] args) {
+        for (int i = 1; i <= 20; i++) {
+            if (i % 2 == 0) {
+                System.out.println(i);
+            }
+        }
+    }
+}
+
+8.public class Main {
+    public static void main(String[] args) {
+        int number = 7;
+
+        for (int i = 1; i <= 10; i++) {
+            System.out.println(number + " X " + i + " = " + (number * i));
+        }
+    }
+}
